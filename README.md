@@ -3,11 +3,7 @@
 npm start
 
 # Run Application on Ios:
-just press i after npm start
-# or
-npx react-native ios
+just press i after npm start or npx react-native ios
 
 # Run Application on Android:
-just press a after npm start
-# or
-npx react-native android
+just press a after npm start or npx react-native android
