@@ -3,7 +3,7 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from '../screens/Home';
-import Restorents from '../screens/Restorents';
+import Restaurents from '../screens/Restaurents';
 
 const Navigation = () => {
   const Stack = createNativeStackNavigator();
@@ -16,8 +16,8 @@ const Navigation = () => {
           options={{headerShown: false}}
         />
         <Stack.Screen
-          name="Restorent"
-          component={Restorents}
+          name="Restaurents"
+          component={Restaurents}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

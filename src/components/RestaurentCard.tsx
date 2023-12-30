@@ -1,10 +1,13 @@
 import {View, Text, TouchableWithoutFeedback, Image} from 'react-native';
 import React from 'react';
 import * as Icon from 'react-native-feather';
+import {useNavigation} from '@react-navigation/native';
 
 const RestaurentCard = ({item, index}: any) => {
+  const navigation: any = useNavigation();
   return (
-    <TouchableWithoutFeedback>
+    <TouchableWithoutFeedback
+      onPress={() => navigation.navigate('Restaurents', {...item})}>
       <View className="mr-6 bg-white rounded-3xl shadow-lg">
         <Image className="h-36 w-64 rounded-t-3xl" source={item?.image} />
         <View className="px-3 pb-2 space-y-2">
